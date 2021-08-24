@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "name": "Trịnh Huy Đạt",
+      "email": "huydat1508@gmail.com",
+      "age": "22",
+      "gender": "Nam",
+      "id": "3ff93df8-bc91-48b5-a448-0950bc16494b"
+    },
+    {
+      "name": "Douglas",
+      "email": "Geo_Douglas@yahoo.com",
+      "age": "11",
+      "gender": "Nữ",
+      "id": "e993ec8f-dd44-4eba-874b-f46f0f3fb4c0"
+    },
+    {
+      "id": "f33b4f4a-7c09-484d-921d-1572471bf604",
+      "name": "Lloyd Dickinson",
+      "email": "River_Heaney37@hotmail.com",
+      "age": "11",
+      "gender": "Nam"
+    }
+  ]
+}
