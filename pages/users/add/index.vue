@@ -34,10 +34,10 @@
                         <div>
                             <label>Giới tính </label>
                             <label class="ml-4">Nam</label>
-                            <input type="radio" name="gender" value="Nam" v-model="gender" checked>
+                            <input type="radio" name="gender" value="Nam" v-model="gender" >
                        
                             <label class="ml-4">Nữ</label>
-                            <input type="radio" name="gender" value="Nữ" v-model="gender">
+                            <input type="radio" name="gender" value="Nữ" checked v-model="gender">
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary">Thêm</button>
@@ -78,6 +78,7 @@ export default {
             }else if (!this.validEmail(this.email)) {
                 this.errors.push('Email không đúng định dạng!');
             }
+            
             if(!this.age){
                 this.errors.push('Tuổi không được để trống!');
             }

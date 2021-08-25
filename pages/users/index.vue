@@ -20,8 +20,8 @@
                 <tr>
                     <th scope="row"></th>
                     <td>{{users.length}}</td>
-                    <td>{{genderMale}}</td>
                     <td>{{genderFemale}}</td>
+                    <td>{{genderMale}}</td>
                 </tr>
             </tbody>
         </table>
@@ -59,7 +59,7 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <p><b>Bạn có chắc chắn muốn xóa user?</b></p>
+                                    <p><b>Bạn có chắc chắn muốn xóa người dùng?</b></p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
@@ -79,12 +79,25 @@
 import {mapState, mapActions} from 'vuex'
 export default {
     name: 'User',
-    computed: mapState(['users']),
+    computed:{
+        ...mapState(['users']),
+        genderMale(){
+            return this.$store.state.users.filter(
+                user => user.gender === 'Nữ'
+            ).length
+        },
+        genderFemale(){
+            return this.$store.state.users.filter(
+                user => user.gender === 'Nam'
+            ).length
+        }
+    },
     created(){
         this.getUsers();
     },
     methods: {
         ...mapActions(['getUsers', 'deleteUser'])
     },
+   
 }
 </script>

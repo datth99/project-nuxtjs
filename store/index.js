@@ -12,7 +12,7 @@ export const actions = {
     // list User
     async getUsers({ commit }) {
         try {
-            const users = await axios.get("http://localhost:3000/users");
+            const users = await axios.get("http://localhost:3000/users").then(response => (this.users = response));
             commit('SET_USERS', users.data);
         } catch (error) {
             console.log(error)

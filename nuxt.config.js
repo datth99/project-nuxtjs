@@ -5,7 +5,7 @@ export default {
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            { hid: 'description', name: 'description', content: '' },
+            { hid: 'description', name: 'description', content: 'Marys simple recipe for maple bacon donuts makes a sticky, sweet treat with just a hint of salt that youll keep coming back for.' },
             { name: 'format-detection', content: 'telephone=no' }
         ],
         link: [
